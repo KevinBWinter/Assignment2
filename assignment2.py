@@ -23,7 +23,7 @@ class Assignment2:
         x = (self.year*3)
         
         select_str = str(x)
-        second_part = ''.join([select_str[i] for i in range(len(select_str)) if i % 2 == 0])
+        second_part = ''.join([select_str[i] for i in range(len(select_str)) if i % 2 != 0])
 
         return first_part + second_part
     @staticmethod
