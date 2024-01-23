@@ -1,7 +1,7 @@
 import re
 import socket
  
-class Assignment2:
+class assignment2:
     def __init__(self, year):
         self.year = year
     def tellAge(self, currentYear):
@@ -54,7 +54,7 @@ class Assignment2:
 
  
  
-x = Assignment2(1996)
+x = assignment2(1996)
  
 x.tellAge(2024)
  
@@ -64,13 +64,13 @@ print(y)
 ret = x.modifyYear(3)
 print(ret)
  
-ret = Assignment2.checkGoodString("f1obar0more")
+ret = assignment2.checkGoodString("f1obar0more")
 print(ret)  # Should print False
  
-ret = Assignment2.checkGoodString("foobar0more")
+ret = assignment2.checkGoodString("foobar0more")
 print(ret)  # Should print True
  
-retval = Assignment2.connectTcp("www.google.com", 80)
+retval = assignment2.connectTcp("www.google.com", 80)
 if retval:
     print("Connection established correctly")
 else:
