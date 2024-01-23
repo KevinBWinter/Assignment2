@@ -8,7 +8,7 @@ class Assignment2:
         age = currentYear - self.year
         print(f"Your age is {age}")
     def listAnniversaries(self):
-        currentYear = 2024
+        currentYear = self.year
         yearsPassed = currentYear - self.year
         anniversaries = []
         for i in range(10, yearsPassed + 1, 10):
