@@ -11,9 +11,10 @@ class Assignment2:
         currentYear = 2024
         yearsPassed = currentYear - self.year
         anniversaries = []
-        for i in range(10, yearsPassed + 1, 10):
+        for i in range(10, yearsPassed, 10):  # Changed from yearsPassed + 1 to yearsPassed
             anniversaries.append(i)
         return anniversaries
+
     def modifyYear(self, n):
         year_str = str(self.year)
 
