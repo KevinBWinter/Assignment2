@@ -17,15 +17,16 @@ class Assignment2:
     def modifyYear(self, n):
         year_str = str(self.year)
 
-    
-        first_part = year_str[:2] * n
+    # Assuming we keep the first two digits of the year as they are
+        first_part = year_str[:2]
 
-        x = (self.year*n)
-        
+    # Multiply the year by 'n' and then select every second digit
+        x = self.year * n
         select_str = str(x)
         second_part = ''.join([select_str[i] for i in range(len(select_str)) if i % 2 == 0])
 
         return first_part + second_part
+
     @staticmethod
     def checkGoodString(string):
         if len(string) < 9:
