@@ -7,14 +7,13 @@ class Assignment2:
     def tellAge(self, currentYear):
         age = currentYear - self.year
         print(f"Your age is {age}")
-    def listAnniversaries(self, currentYear):
+    def listAnniversaries(self):
+        currentYear = 2022
         yearsPassed = currentYear - self.year
         anniversaries = []
-        for i in range(10, yearsPassed, 10):
+        for i in range(10, yearsPassed + 1, 10):
             anniversaries.append(i)
         return anniversaries
-
-
     def modifyYear(self, n):
         year_str = str(self.year)
 
